@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @media (min-width: 992px) {
     .navbar {
         height:60px;
@@ -11,4 +13,31 @@ body {
 
 .navbar {
     box-shadow: 1px 1px 3px #000000;
+    background: rgb(49,149,231);
+    background: linear-gradient(0deg, rgba(49,149,231,1) 20%, rgba(0,212,255,1) 100%);
 }
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: 
+    linear-gradient(to bottom, rgba(0,0,0, 0.1) , rgba(0,0,0,1)), 
+    url('../images/wallpaper_header.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lead{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    text-shadow: 4px 4px 5px #000;    
+}
+.collapse-content .fa.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  .collapse-content .fa.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
