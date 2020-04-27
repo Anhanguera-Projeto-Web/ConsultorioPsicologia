@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="pt-br" />
+    <title>Psicologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="shortcut icon" type="image/png" href="src/images/logo.png"/> 
+<!--Source the CSS -->	
+
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" >
+    
+
+<!--Source the JS -->
+<script src="src/js/jquery.js"></script> 
+<script src="src/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" type="text/css" href="src/css/contato.css">
+
+
+<!--brian css -->
+<link rel="stylesheet" type="text/css" href="src/css/footer.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> <!-- Serve para por a imagem de rede social -->
+
+
+</head>
+
+  <body>
+
+    <div id="header"></div>
+<br><br><br>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <form class="needs-validation contato" novalidate action="#" method="get">
+  <div class="form-row">
+  <brian class="col-md-4 mb-3">
+   <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Intuito</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    
+    <option value="1" selected>Pedido de informação</option>
+    <option value="2">Reclamação</option>
+    <option value="3">Outro</option>
+  </select>
+   </brian>
+    <div class="col-md-4 mb-3">
+     
+      <label for="validationCustom01">Primeiro nome</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nome"  required>
+      <div class="valid-feedback">
+        Tudo certo!
+      </div>
+    </div>
+    <br>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Sobrenome</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
+      <div class="valid-feedback">
+        Tudo certo!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      
+
+    
+      
+    </div>
+  </div>
+  <div class="form-row">
+   <div class="col-md-3 mb-3">
+      <label for="validationCustom05">CEP</label>
+      <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control" id="validationCustom05" placeholder="CEP" required maxlength="8" type="number" required>
+      <div class="invalid-feedback">
+        Por favor, informe um CEP válido.
+      </div>
+    </div>
+    <div class="col-md-2 mb-3">
+      <label for="validationCustom03">Cidade</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+      <div class="invalid-feedback">
+        Por favor, informe uma cidade válida.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Estado</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+      <div class="invalid-feedback">
+        Por favor, informe um estado válido.
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  <label for="exampleFormControlTextarea1">Coloque sua mensagem</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Coloque sua mensagem"></textarea>
+  
+  
+  
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Confirmo todos os dados prenchidos
+      </label>
+      <div class="invalid-feedback">
+        Você deve concordar, antes de continuar.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
+
+
+ <!--função para retonar info do cep -->
+             <script type="text/javascript">
+		      $("#validationCustom05").focusout(function(){
+			//Início do Comando AJAX
+			$.ajax({
+
+				url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+
+				dataType: 'json',
+
+				success: function(resposta){
+                    $("#validationCustom03").val(resposta.localidade);
+                    $("#validationCustom04").val(resposta.uf);
+				}    
+                });
+		      });
+	       </script>
+    
+<div id="footer"></div>
+  </body>
+  <script>
+    $(document).ready(function() {
+          $('#header').load("header.html");
+        });
+      
+      $(document).ready(function() {
+          $('#footer').load("footer.html");
+        }); 
+      </script> 
+</html>
