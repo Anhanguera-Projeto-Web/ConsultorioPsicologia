@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="pt-br" />
+    <title>Psicologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="shortcut icon" type="image/png" href="src/images/logo.png"/> 
+<!--Source the CSS -->	
+
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" >
+    
+
+<!--Source the JS -->
+<script src="src/js/jquery.js"></script> 
+<script src="src/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" type="text/css" href="src/css/contato.css">
+
+
+<!--brian css -->
+<link rel="stylesheet" type="text/css" href="src/css/footer.css">
+<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> <!-- Serve para por a imagem de rede social -->
+
+
+</head>
+
+  <body>
+
+    <div id="header"></div>
+<br><br><br>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <form class="needs-validation contato" novalidate action="#" method="get">
+  <div class="col-md-9 mb-1">
+   <div class="form-row">
+    <div class="col-md-1 mb-3">
+     
+      <label for="validationCustom01">IdSessao</label>
+      <input class="form-control" id="idsessao" type="text" placeholder="01" readonly>
+
+    </div>
+    <br>
+    <div class="col-md-2 mb-6">
+      <label for="validationCustom02">idAnamnese,</label>
+      <input class="form-control" id="idAnamnese" type="text" placeholder="001" readonly>
+      
+    </div>
+    
+    <div class="col-md-2 mb-3">
+      <label for="validationCustom02">data</label>
+      <input id="date" type="date">
+      
+    </div>
+    
+    
+    
+    
+    <div class="col-md-8 mb-3">
+      <label for="validationCustom02">Queixas do paciente</label>
+      <textarea class="form-control" id="queixas_paciente" rows="2" placeholder="Coloque suas queixas"></textarea>
+
+    
+      
+    </div>
+    
+    
+    
+    
+    <div class="col-md-8 mb-3">
+      <label for="validationCustom02">Plano de tratamento</label>
+      <textarea class="form-control" id="plano_tratamento" rows="2" placeholder="Coloque o plano de tratamento"></textarea>
+    </div>
+    
+    
+     <div class="col-md-8 mb-3">
+      <label for="validationCustom02">Diagnostico final</label>
+      <textarea class="form-control" id="diagnostico_final" rows="2" placeholder="Coloque o diagnostico final"></textarea>
+    </div>
+     
+     <div class="col-md-8 mb-3">
+      <label for="validationCustom02">Resumo sessao</label>
+      <textarea class="form-control" id="resumo_sessao," rows="2" placeholder="Coloque o diagnostico final"></textarea>
+    </div>
+    
+    
+  </div>
+  
+  <label  for="validationCustom05">Evolucao</label>
+<input type='number' id="teste" step='0.01' value='0.01' min="0.01" max="100.00" placeholder='0.00' />
+ <label>%</label>
+  
+  <br><br>
+  <div class="form-row">
+  
+   
+      
+
+     <!-- <input type="text" class="form-control" id="evolucao" placeholder="CEP" required maxlength="8" type="number" required> -->
+     
+   <div class="col-md-1 mb-3">
+     
+     
+
+   
+    <label for="exampleFormControlSelect1">Pago</label>
+    <select class="form-control" id="pago">
+      <option>0</option>
+      <option>1</option>
+    </select>
+     </div>
+    
+  </div>
+   
+  
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Confirmo todos os dados prenchidos
+      </label>
+      <div class="invalid-feedback">
+        Você deve concordar, antes de continuar.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+       </div>
+</form>
+
+ 
+    
+<div id="footer"></div>
+  </body>
+  <script>
+    $(document).ready(function() {
+          $('#header').load("header.html");
+        });
+      
+      $(document).ready(function() {
+          $('#footer').load("footer.html");
+        }); 
+      </script> 
+</html>
