@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="language" content="pt-br" />
+    <title>Psicologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="shortcut icon" type="image/png" href="src/images/3.png"/> 
+<!--Source the CSS -->	
+
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" >
+     <link rel="stylesheet" href="src/css/mdb.min.css">
+
+<!--Source the JS -->
+<script src="src/js/jquery.js"></script> 
+<script src="src/js/bootstrap.min.js"> </script>
+<script src="src/js/mdb.min.js"> </script>
+</head>
+
+  <body>
+
+    <!-- Importando Header.html -->
+    <div id="header">
+    </div>
+
+<section class="my-5">
+<div class="container">
+
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Contato</h2>
+
+    <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+      eum porro a pariatur veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+      eum porro a pariatur veniam.</p>
+      <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+        eum porro a pariatur veniam.</p>
+
+    <div class="row">
+  
+
+      <div class="col-md-9 mb-md-0 mb-5">
+  
+        <form>
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="contact-name" class="form-control">
+                <label for="contact-name" class="">Nome completo</label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="contact-email" class="form-control">
+                <label for="contact-email" class="">Seu e-mail</label>
+              </div>
+            </div>
+
+  
+          </div>
+      
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="md-form mb-0">
+                <input type="text" id="contact-Subject" class="form-control">
+                <label for="contact-Subject" class="">Título do contato</label>
+              </div>
+            </div>
+
+  
+          </div>
+
+          <div class="row">
+  
+
+            <div class="col-md-12">
+              <div class="md-form">
+                <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                <label for="contact-message">Sua mensagem</label>
+              </div>
+            </div>
+
+  
+          </div>
+ 
+  
+        </form>
+  
+        <div class="text-center text-md-left">
+          <a class="btn btn-primary btn-md">Enviar</a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+            <p>Niterói, RJ.</p>
+          </li>
+          <li>
+            <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+            <p>(21)12345-6789</p>
+          </li>
+          <li>
+            <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+            <p class="mb-0">clinica@psicologia.com</p>
+          </li>
+        </ul>
+      </div>
+
+  
+    </div>
+
+</div>
+  </section>
+
+  </body>
+  <script>
+    $(document).ready(function() {
+          $('#header').load("header.html");
+        });
+      </script> 
+</html>
