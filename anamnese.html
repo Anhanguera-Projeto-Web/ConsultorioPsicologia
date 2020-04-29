@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="anamnese.css">
+<head>
+	<title>Anamnese</title>
+</head>
+<body>
+	<br>
+	<p><b>Dados do Paciente</b></p>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Nome</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Nome">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Sobrenome</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Sobrenome">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Data de Nascimento</label>
+      <input type="text" class="form-control" id="inputData" placeholder="00/00/0000">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputSexo">Sexo</label>
+      <select id="inputSexo" class="form-control">
+        <option selected> </option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputIdade">Idade</label>
+      <input type="text" class="form-control" id="inputIdade" placeholder="00">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputAddress">Endereço</label>
+    <input type="text" class="form-control" id="inputEndereço" placeholder="Rua ABC 123">
+  </div>
+    <div class="form-group">
+    	<P><b>Motivo da Consulta</b></P>
+    <label for="exampleFormControlTextarea1">Queixa Principal</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+   <div class="form-group">
+  <label for="exampleFormControlTextarea1">Histórico da Queixa (Quando começou, em que circunstancias)</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+      <div class="form-group">
+     <label for="exampleFormControlTextarea1">Sintomas</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <p><b>Dados do Paciente</b></p>
+  <br>
+  	 <div class="form-row">
+  <div class="form-group col-md-6">
+ 	
+  <p>Fez tratamentos anteriores?</p>
+  <select class="form-control ">
+  <option></option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+</div>
+<div class="form-group col-md-6">
+      <label for="inputEmail4">Se a resposta for <b>SIM</b>, descreva-o</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Tratamento">
+    </div>
+</div>
+
+  	 <div class="form-row">
+  <div class="form-group col-md-6">
+ 	
+  <p>Faz uso de algum medicamento?</p>
+  <select class="form-control ">
+  <option></option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+</div>
+<div class="form-group col-md-6">
+      <label for="inputEmail4">Se a resposta for <b>SIM</b>, quais:</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Tratamento">
+</div>
+</div>
+
+    <label for="exampleFormControlTextarea1">Descreva a Infancia do Paciente</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <br>
+	 <div class="form-row">
+      <div class="form-group col-md-4">
+      <label for="inputEmail4">Descreva a Rotina da Noite do Paciente</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Dia">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Descreva a Rotina da Tarde do Paciente</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Tarde">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Descreva a Rotina da Noite do Paciente</label>
+      <input type="nome" class="form-control" id="inputNome4" placeholder="Noite">
+    </div>
+</div>
+
+    <label for="exampleFormControlTextarea1">Descreva acerca da Rotina de Trabalho do Paciente</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<br>
+  	 <div class="form-row">
+  <div class="form-group col-md-6">
+ 	
+  <p>O Paciente tem Hobbies?</p>
+  <select class="form-control ">
+  <option></option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+</div>
+
+
+<div class="form-group col-md-6">
+      <label for="inputEmail4">Se a resposta for <b>SIM</b>, descreva-os</label>
+      <input type="nome" class="form-control" id="inputHobbies4" placeholder="Hobbies">
+</div>
+</div>
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+ 	
+  <p>O Paciente tem Vicios?</p>
+  <select class="form-control ">
+  <option></option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+</div>
+<div class="form-group col-md-6">
+      <label for="inputEmail4">Se a resposta for <b>SIM</b>, descreva sobre esses vicios.</label>
+      <input type="nome" class="form-control" id="inputVicios4" placeholder="Vicios">
+</div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+
+  <p>A Família do Paciente tem algum histórico de doenças?</p>
+  <select class="form-control ">
+  <option></option>
+  <option>Sim</option>
+  <option>Não</option>
+</select>
+</div>
+<div class="form-group col-md-6">
+      <label for="inputEmail4">Se a resposta for <b>SIM</b>, quais?</label>
+      <input type="nome" class="form-control" id="inputDoenças4" placeholder="doenças">
+</div>
+</div>
+
+ <label for="exampleFormControlTextarea1">Descreva sobre os comportamentos do Paciente (Humor, forma de agir, etc.) </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<br>
+<p><b>Relatório das Sessões</b></p>
+
+<div class="form-row">
+      <div class="form-group col-md-6">
+      <label for="inputEmail4">Hipotese Diagnosticada (Possiveis problemas)</label>
+      <input type="nome" class="form-control" id="inputHipotese4" placeholder="Hipotese">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Alguma observação a ser feita?</label>
+      <input type="nome" class="form-control" id="inputObs4" placeholder="Obs">
+    </div>
+</div>
+      	 <div class="form-row">
+  <div class="form-group col-md-6">
+ 	
+  <p>Quantas sessões foram feitas?</p>
+  <select class="form-control ">
+  <option></option>
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+</select>
+</div>
+<div class="form-group col-md-6">
+      <label for="inputEmail4">Valor de cada Sessão</label>
+      <input type="nome" class="form-control" id="inputvalor4" placeholder="Valor">
+</div>
+</div>
+ 	 	</form>
+ 	 	<button type="button" class="btn btn-primary">Enviar Relatório</button>
+   </body>
+</html>
