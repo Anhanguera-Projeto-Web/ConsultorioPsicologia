@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- links CSS -->
+        <link rel="stylesheet" href="src/css/bootstrap.min.css" >
+
+<!--Source the JS -->
+<script src="src/js/jquery.js"></script> 
+<script src="src/js/bootstrap.min.js"> </script>
+      <!-- Link Google Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <title>Cadastro Usuário</title>
+
+      <style>
+          Body{
+              font-size: 15px;
+              font-family: 'Roboto', sans-serif;
+          }
+
+          ul{
+              margin: auto;
+          }
+
+          li{
+              padding: 20px;
+              font-size: 1.3em;
+
+          }
+
+          .main{
+              background-color: #F5F5F5;
+              margin-top: 50px;
+          }
+
+          h1{
+              font-size: 2em;
+              text-align: center;
+              padding-top: 25px;
+          }
+
+          form{
+              padding: 60px;
+          }
+          .nome{
+              margin-bottom: 10px;
+          }
+
+          .texto{
+              margin-left: -15px;
+          }
+      </style>
+  </head>
+  <body>
+      <div id="header">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="content main">
+            <h1>Seja Bem Vindo! Crie Sua conta e Trabalhe na Clínica Tech Psicologia</h1>
+
+          <!--Formulário -->
+            <form action="destino.php" method="post">
+
+                <!-- campo nome -->
+                <div class="form-group row">
+                    <div class="col-sm-7">
+                        Nome Completo
+                        <input type="text" class="form-control" id="name" required min="10" maxlength="80" placeholder="Digite Seu Nome Completo">
+                    </div>
+                     <!--Campo CPF -->
+                    <div class="col-sm-5">
+                        CPF    
+                        <input type="text" class="form-control" id="cpf" required maxlength="11" placeholder="Digite Seu CPF">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row">
+                    <!--Campo telefone  -->
+                    <div class="col-sm-3">
+                        Telefone    
+                        <input type="tel" class="form-control" id="telefone" required maxlength="11" placeholder="Digite o Número do seu telefone">
+                    </div>
+
+                    <!--Campo CRP  -->
+                    <div class="col-sm-3">
+                        CRP
+                        <input type="text" class="form-control" id="crp" required maxlength="8" placeholder="Digite o Número do seu CRP">
+                    </div>
+                </div>
+
+                <!--Campo Email -->
+                <div class="form-group row">
+                    <div class="col-sm-8">
+                        Email para Login   
+                        <input type="email" class="form-control" id="inputEmail3" required maxlength="100" placeholder="Digite o seu Email para Loguin">
+                    </div>
+                </div>
+
+                <!--Campo Senha -->
+                <div class="form-group row">
+                    <div class="col-sm-8">
+                        Criar Senha
+                        <input type="password" class="form-control" id="inputPassword3" required maxlength="20" required placeholder="Crie uma Senha">
+                    </div>
+                </div>
+
+                <!--Campo do checkbox -->
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Confirmo todos os dados prenchidos</label>
+                </div>
+
+                <!--Botão para criar conta -->
+                <button type="submit" class="btn btn-primary">Criar Conta</button>
+            </form>
+          </div>
+
+         
+      </div>
+      
+      
+      
+        <!-- Optional JavaScript -->
+       
+      
+        <div id="footer"></div>
+
+  <script>
+    $(document).ready(function() {
+          $('#header').load("header.html");
+        });
+       $(document).ready(function() {
+          $('#footer').load("footer.html");
+        }); 
+      </script> 
+      
+      
+  </body>
+</html> 
